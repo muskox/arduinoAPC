@@ -45,16 +45,52 @@ void loop() {
 
   digitalPotWrite(0, 40);
   delay(500);
-  hold_silence(100,190);
-  digitalPotWrite(0, 60);
+  hold_silence(100,170);   // 100,190
+  digitalPotWrite(0, 50);  // 0,60
   delay(500);
-  hold_silence(100,190);
-  digitalPotWrite(0, 60);
+  hold_silence(100,170);   // 100,190
+  digitalPotWrite(0, 50);  // 0,60
   delay(1000);
 
+  digitalPotWrite(1, 190); // back to 190 scale
+
+  digitalPotWrite(0, 40);
+  delay(500);
+  digitalPotWrite(0, 15);
+  delay(500);
+  digitalPotWrite(0, 1);
+  delay(500);
+  digitalPotWrite(0, 15);
+  delay(500);
 
 
-  hold_silence(2500,190);
+  digitalPotWrite(0, 40);
+  delay(400);
+  hold_silence(100,190);
+  digitalPotWrite(0, 40);
+  delay(400);
+  hold_silence(100,190); 
+  digitalPotWrite(0, 40);
+  delay(400);
+  hold_silence(100,190);
+  digitalPotWrite(0, 40);
+  delay(500);
+
+  digitalPotWrite(0, 15);
+  delay(400);
+  hold_silence(100,190);
+  digitalPotWrite(0, 15);
+  delay(500);
+  digitalPotWrite(0, 40);
+  delay(500);
+  digitalPotWrite(0, 15);
+  delay(500);
+
+  digitalPotWrite(0, 1);
+  delay(2000);
+
+
+  hold_silence(2000,190);
 
 }
 
