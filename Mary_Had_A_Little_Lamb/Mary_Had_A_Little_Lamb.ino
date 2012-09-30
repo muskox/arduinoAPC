@@ -12,7 +12,7 @@ void setup() {
 }
 
 void loop() {
-  // Write the song in 190 scale
+  // Written in 190 scale
 
   digitalPotWrite(1, 190);
   
@@ -45,11 +45,11 @@ void loop() {
 
   digitalPotWrite(0, 40);
   delay(500);
-  hold_silence(100,170);   // 100,190
-  digitalPotWrite(0, 50);  // 0,60
+  hold_silence(100,170);   // switch to 170 scale
+  digitalPotWrite(0, 50);  
   delay(500);
-  hold_silence(100,170);   // 100,190
-  digitalPotWrite(0, 50);  // 0,60
+  hold_silence(100,170);  
+  digitalPotWrite(0, 50);  
   delay(1000);
 
   digitalPotWrite(1, 190); // back to 190 scale
