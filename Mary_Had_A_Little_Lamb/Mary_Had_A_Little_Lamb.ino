@@ -15,35 +15,53 @@ void loop() {
   // Write the song in 190 scale
 
   digitalPotWrite(1, 190);
-  digitalPotWrite(0, 40);
-  delay(1000);
-  digitalPotWrite(0, 15);
-  delay(1000);
-  digitalPotWrite(0, 1);
-  delay(1000);
-  digitalPotWrite(0, 15);
-  delay(1000);
   
   digitalPotWrite(0, 40);
-  delay(1000);
-  hold_silence(200);
-  digitalPotWrite(0, 40);
-  delay(1000);
-  hold_silence(200);
-  digitalPotWrite(0, 40);
-  delay(1000);
-  hold_silence(200);
+  delay(500);
   digitalPotWrite(0, 15);
-  delay(2000);
-  hold_silence(200);
+  delay(500);
+  digitalPotWrite(0, 1);
+  delay(500);
+  digitalPotWrite(0, 15);
+  delay(500);
+  
+  digitalPotWrite(0, 40);
+  delay(500);
+  hold_silence(100,190);
+  digitalPotWrite(0, 40);
+  delay(500);
+  hold_silence(100,190);
+  digitalPotWrite(0, 40);
+  delay(1000);
+  
+  digitalPotWrite(0, 15);
+  delay(500);
+  hold_silence(100,190);
+  digitalPotWrite(0, 15);
+  delay(500);
+  hold_silence(100,190);
+  digitalPotWrite(0, 15);
+  delay(1000);
 
+  digitalPotWrite(0, 40);
+  delay(500);
+  hold_silence(100,190);
+  digitalPotWrite(0, 60);
+  delay(500);
+  hold_silence(100,190);
+  digitalPotWrite(0, 60);
+  delay(1000);
+
+
+
+  hold_silence(2500,190);
 
 }
 
 void hold_silence(int millisecs, int scale){
   digitalPotWrite(1, 40); // Right channel 1 will go silent below around 106
   delay(millisecs);
-  digitalPotWrite(1, 190); // Put it back to the scale we were on
+  digitalPotWrite(1, scale); // Put it back to the scale we were on
 }
 
 
